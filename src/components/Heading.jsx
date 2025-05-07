@@ -8,13 +8,13 @@ const Heading = ({
   isLine = false,
 }) => {
   return (
-    <div className="flex flex-col items-start gap-4">
+    <div className="flex flex-col items-start gap-2">
       <h2
-        className={`flex ${isFlexCol ? "flex-col" : "flex-row"} ${
+        className={`text-2xl lg:text-4xl tracking-tight font-bold flex ${isFlexCol ? "flex-col" : "flex-row"} ${
           isCenter ? "items-center" : "items-start"
-        } gap-2`}
+        } !gap-0`}
       >
-        <span className="text-secondary">{firstPart}</span>
+        <span className="text-secondary text-center">{firstPart}</span>
         {secondPart !== null && (
           <span className="text-primary">{secondPart}</span>
         )}

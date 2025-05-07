@@ -34,16 +34,14 @@ const TestimonialSlider = () => {
     },
   ];
   return (
-    <section className="bg-white py-12">
-      <h2 className="text-center text-3xl font-bold">
-        <span className="text-black">WHAT </span>
-        <span className="text-orange-500">PARENT SAYS</span>
-      </h2>
-      <Heading
-        firstPart={"WHAT"}
-        secondPart={"PARENT SAYS"}
-        isFlexCol={false}
-      />
+    <section className="py-12 bg-[#f1f1f1] my-20 mb-44">
+      <div className="w-full flex items-center justify-center">
+        <Heading
+          firstPart={"WHAT"}
+          secondPart={"PARENT SAYS"}
+          isFlexCol={false}
+        />
+      </div>
       <div className="mt-10 px-4 max-w-7xl mx-auto">
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -54,7 +52,7 @@ const TestimonialSlider = () => {
             clickable: true,
             enabled: true,
             renderBullet: (index, className) => {
-              return `<span class="${className} !bg-primary !w-10 !h-2 !rounded-lg custom-bullet"></span>`;
+              return `<span class="${className} !bg-primary !w-8 !h-[2px] !rounded-lg custom-bullet"></span>`;
             },
           }}
           breakpoints={{
@@ -65,8 +63,8 @@ const TestimonialSlider = () => {
           }}
         >
           {testimonials.map((item, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white shadow-lg rounded-lg p-5 h-full flex flex-col">
+            <SwiperSlide key={idx} className="mb-12">
+              <div className="testimonialCard bg-white rounded-lg p-5 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-3">
                   <img
                     src={item.img}

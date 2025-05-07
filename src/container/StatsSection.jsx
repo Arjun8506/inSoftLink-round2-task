@@ -1,52 +1,55 @@
 import React from "react";
+import Heading from "../components/Heading";
 
 const StatsSection = () => {
   const stats = [
     {
-      icon: "🎓", // You can replace with an actual icon or use an image
+      icon: "/assets/client-1.png",
       number: "108+",
       label: "Happy School",
     },
     {
-      icon: "👪",
+      icon: "/assets/client-2.png",
       number: "5360+",
       label: "Happy Parents",
     },
     {
-      icon: "🎓",
+      icon: "/assets/client-3.png",
       number: "58030+",
       label: "Students",
     },
     {
-      icon: "👨‍🏫",
+      icon: "/assets/client-4.png",
       number: "10+",
       label: "Happy Tutors",
     },
   ];
   return (
-    <section className="bg-white py-10 px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
-      {/* Left Image Section */}
-      <div className="max-w-md">
+    <section className="bg-white py-20 px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
+      <div className="w-[100%] h-60 bg-secondary relative">
+        <div className="w-[95%] h-60 absolute -top-10 left-5 bg-[#f1f1f1]"></div>
         <img
-          src="https://i.imgur.com/5QFh6kG.png" // Replace with your real image URL
+          src="/assets/client.png"
           alt="Teacher"
-          className="w-full rounded-md"
+          className="w-[70%] absolute bottom-0 right-0 rounded-md"
         />
       </div>
 
-      {/* Right Stats Section */}
-      <div className="text-center lg:text-left">
-        <h2 className="text-3xl font-bold text-black mb-6">
-          WE <span className="text-orange-500">ARE SPREADING</span>
-        </h2>
+      <div className="lg:text-left flex flex-col items-start w-full gap-5">
+        <Heading
+          firstPart={"WE"}
+          secondPart={"ARE SPREADING"}
+          isCenter={false}
+          isLine={true}
+        />
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-4">
-              <div className="text-4xl">{stat.icon}</div>
+              <img src={stat.icon} alt={stat?.label} />
               <div>
-                <p className="text-2xl font-bold text-black">{stat.number}</p>
-                <p className="text-orange-500 text-sm">{stat.label}</p>
+                <p className="text-3xl font-bold text-secondary">{stat.number}</p>
+                <p className="text-primary text-sm">{stat.label}</p>
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Heading from "../components/Heading";
 
 const data = [
   {
@@ -51,20 +52,27 @@ const data = [
 const CourseSection = () => {
   const [activeTab, setActiveTab] = useState("School");
 
-  return (
-    <section className="p-6">
-      <h2 className="text-2xl font-bold text-[#0d0c2a] uppercase">
-        Provide <span className="text-orange-500">Best Educational</span>
-      </h2>
+  const selectedCourses = data?.find(
+    (item) => item?.tab === activeTab
+  )?.courses;
 
-      <div className="mt-6 flex bg-white shadow-md rounded-md overflow-hidden">
-        {/* Sidebar */}
-        <div className="w-1/4 bg-gray-100 border-r">
+  return (
+    <section className="py-10 lg:max-w-4xl lg:mx-auto">
+      <div className="w-full px-3">
+        <Heading
+          firstPart={"Provide"}
+          isCenter={false}
+          secondPart={"Best Educational"}
+        />
+      </div>
+
+      <div className="mt-6 flex flex-col lg:flex-row bg-white overflow-hidden testimonialCard">
+        <div className="lg:w-1/4 flex flex-nowrap lg:flex-col bg-gray-100 border-r">
           {data?.map((item) => (
             <div
               key={item?.tab}
               onClick={() => setActiveTab(item?.tab)}
-              className={`px-6 py-4 cursor-pointer text-sm font-medium ${
+              className={`px-6 py-4 text-center w-[25%] lg:w-full overflow-hidden cursor-pointer text-xs font-medium ${
                 activeTab === item?.tab
                   ? "bg-white border-l-4 border-orange-500 text-black"
                   : "text-gray-500 hover:bg-gray-200"
@@ -75,25 +83,28 @@ const CourseSection = () => {
           ))}
         </div>
 
-        <div className="w-3/4 p-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {data
-            ?.find((item) => item?.tab === activeTab)
-            ?.courses?.map((item, idx) => (
-              <div
-                key={idx}
-                className="border rounded-md p-3 flex items-center gap-3"
-              >
-                <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center text-lg font-bold">
-                  N
+        <div className="lg:w-3/4 w-full h-fit grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 p-3 pb-0 gap-y-3 ">
+          {selectedCourses?.length > 0 ? (
+            <>
+              {selectedCourses?.map((item, idx) => (
+                <div key={idx} className="border h-fit flex items-center gap-3">
+                  <div className="entrance-img">
+                    <h1>N</h1>
+                  </div>
+                  <div>
+                    <p className="text-primary font-semibold text-sm">
+                      {item.className}
+                    </p>
+                    <p className="text-xs text-gray-500">{item.count}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-primary font-semibold text-sm">
-                    {item.className}
-                  </p>
-                  <p className="text-xs text-gray-500">{item.count}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </>
+          ) : (
+            <h4 className="text-center text-2xl col-span-2 lg:col-end-4 py-2">
+              Coming Soon
+            </h4>
+          )}
         </div>
       </div>
     </section>

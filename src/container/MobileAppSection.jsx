@@ -1,9 +1,9 @@
 import React from "react";
+import Heading from "../components/Heading";
 
 const MobileAppSection = () => {
   return (
-    <section className="bg-gray-100 py-12 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10">
-      {/* Image Section */}
+    <section className="bg-[#f1f1f1] flex flex-col md:flex-row items-center">
       <div className="md:w-1/2">
         <img
           src="/assets/school_aura_app.jpg"
@@ -13,12 +13,20 @@ const MobileAppSection = () => {
       </div>
 
       {/* Text Content */}
-      <div className="md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0d0c2a] mb-4">
+      <div className="md:w-1/2 px-3 md:px-10 lg:px-20 py-10">
+        <h2 className="text-2xl md:hidden md:text-4xl font-bold text-secondary mb-4">
           Easy to Access with{" "}
-          <span className="text-orange-500">Mobile APP</span>
+          <span className="text-primary">Mobile APP</span>
         </h2>
-        <p className="text-gray-700 mb-4">
+        <div className="md:block hidden">
+          <Heading
+            firstPart={"Easy to Access with"}
+            isCenter={false}
+            isFlexCol={false}
+            secondPart={"Mobile APP"}
+          />
+        </div>
+        <p className="text-gray-700 my-4">
           If you’re looking for easily accessible resources for your classroom,
           then you’re in the right place. Online learning with the Android app
           is very easy to access. That’s why we’ve hand-curated the School Aura

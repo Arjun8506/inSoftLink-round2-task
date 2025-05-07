@@ -7,6 +7,7 @@ import StatsSection from "../container/StatsSection";
 import VisitCampus from "../container/VisitCampus";
 import TestimonialSlider from "../container/TestimonialSlider";
 import HeroSection from "../container/HeroSection";
+import BenefitsSection from "../container/BenefitsSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection />
       <OnlineStudySection />
       <CourseSection />
+      <BenefitsSection />
       <MobileAppSection />
       <OnlineEducation />
       <StatsSection />

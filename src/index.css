@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.testimonialCard {
+  -webkit-box-shadow: 0 0 20px 0px #aaaaaa !important;
+  box-shadow: 0 0 20px 0px #aaaaaa !important;
+}
+
+.entrance-img {
+  float: left;
+  width: 55px !important;
+  height: 55px !important;
+  overflow: hidden;
+  padding-left: 10px;
+  background-color: #0d1028;
+}
+.entrance-img h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 10px 0 0;
+  color: #343541;
+  font-weight: 900;
+  color: #343541;
+  font-size: 60px !important;
+}

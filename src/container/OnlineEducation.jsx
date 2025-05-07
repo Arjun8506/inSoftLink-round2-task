@@ -1,23 +1,25 @@
 import React from "react";
+import Heading from "../components/Heading";
 
 const OnlineEducation = () => {
   return (
-    <section className="bg-white py-12 px-6 md:px-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
+    <section className="bg-white py-12 px-0 md:px-10">
+      <div className="md:max-w-7xl px-3 w-full mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-3xl font-bold text-[#0c0c24]">
-            Benefits of <span className="text-[#f55900]">Online Education</span>
-          </h2>
-          <hr className="my-4 w-16 border-[#f55900]" />
-          <p className="text-gray-700 mb-6">
+          <Heading
+            firstPart={"Benefits of"}
+            isLine={true}
+            secondPart={"Online Education"}
+            isCenter={false}
+          />
+          <p className="text-gray-700 my-4">
             Online Education increases engagement by adding a human element.
             Studying in the comfort of your own home is convenient, but there
             are various other advantages of online study. It's especially
             beneficial for students who aren't as self-sufficient or who are
             used to the traditional educational model of "teacher and class."
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-2">
+          <ul className="list-disc list-inside text-gray-800 space-y-1">
             <li>Time and Location Flexibility</li>
             <li>Find Unlimited Course Category</li>
             <li>No Need to Carry Books</li>
@@ -27,18 +29,21 @@ const OnlineEducation = () => {
           </ul>
         </div>
 
-        {/* Right Image */}
         <div className="flex justify-center">
           <img
-            src="/images/thumbs-up-man.png" // Replace with actual image path
+            src="/assets/spreading.png"
             alt="Thumbs Up Man"
-            className="max-w-xs md:max-w-sm"
+            className="w-[50%] md:max-w-sm"
           />
         </div>
       </div>
 
-      {/* Bottom Stats */}
-      <div className="bg-[#0c0c24] text-white mt-10 py-6 px-4 grid grid-cols-2 md:grid-cols-4 text-center">
+      <div
+        className="bg-secondary text-white py-6 px-4 grid grid-cols-2 md:grid-cols-4 text-center bg-cover bg-center bg-no-repeat"
+        // style={{
+        //   backgroundImage: `url("/assets/Clip.png")`,
+        // }}
+      >
         <div>
           <p className="text-2xl font-bold">10000+</p>
           <p className="text-[#f55900] font-medium">Total Exams</p>
