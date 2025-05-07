@@ -1,6 +1,8 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import Navbar from "./container/Navbar";
+import Footer from "./container/Footer";
+import Home from "./page/Home";
 
 const App = () => {
   useEffect(() => {
@@ -10,6 +12,8 @@ const App = () => {
   return (
     <div className="w-full font-openSans">
       <Navbar />
+      <Home />
+      <Footer />
     </div>
   );
 };

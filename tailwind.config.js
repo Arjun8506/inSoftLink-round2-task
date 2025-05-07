@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: "#ff5202",
-        secondary: "#06091b"
+        secondary: "#06091b",
+        tertiary: "#06091b",
       },
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
