@@ -6,7 +6,6 @@ const VisitCampus = () => {
   return (
     <section className="bg-[#f1f1f1] py-10 px-3 lg:py-2 lg:px-0 lg:max-w-4xl lg:mx-auto">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        {/* Video Block */}
         <div className="w-full h-72 bg-black relative">
           <iframe
             className="w-full h-full"
@@ -16,8 +15,7 @@ const VisitCampus = () => {
           />
         </div>
 
-        {/* Text Block */}
-        <div className="">
+        <div data-aos="fade-up" className="">
           <Heading
             firstPart={"VISIT OUR CAMPUS"}
             isCenter={false}

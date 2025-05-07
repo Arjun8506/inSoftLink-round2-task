@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 const OnlineStudySection = () => {
   return (
     <section className="bg-white py-12 pb-20 lg:pt-20 lg:max-w-4xl mx-auto flex flex-col lg:grid lg:grid-cols-3 items-center gap-12 lg:gap-5 relative z-[2]">
-      <div className="relative w-full lg:h-full order-2 lg:order-1">
+      <div data-aos="fade-up" className="relative w-full lg:h-full order-2 lg:order-1">
         <div
           className=" w-full py-10 pb-20 md:h-72 lg:h-full bg-secondary text-white flex items-center justify-center  bg-center bg-no-repeat bg-cover"
           style={{
@@ -24,7 +24,7 @@ const OnlineStudySection = () => {
         </div>
       </div>
 
-      <div className="w-full order-1 lg:col-span-2 lg:order-2 p-3">
+      <div data-aos="fade-up" className="w-full order-1 lg:col-span-2 lg:order-2 p-3">
         <Heading
           firstPart={"Why Online Study With SchoolAura"}
           isFlexCol={false}
@@ -45,7 +45,7 @@ const OnlineStudySection = () => {
           device for right things not for waste your time.
         </p>
       </div>
-      <div className="absolute -bottom-40 hidden lg:block left-0 transform lg:translate-x-0 z-[2] w-[100%]">
+      <div data-aos="fade-up" className="absolute -bottom-40 hidden lg:block left-0 transform lg:translate-x-0 z-[2] w-[100%]">
         <img src="/assets/Layer-20.png" alt="Students" className="w-full object-contain" />
       </div>
     </section>

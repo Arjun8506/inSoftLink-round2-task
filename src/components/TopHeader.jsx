@@ -27,13 +27,13 @@ const TopHeader = () => {
       <div className="items-center space-x-2 mt-2 sm:mt-0 hidden md:flex">
         <a
           href="#"
-          className="bg-green-500 text-white px-2 py-1 rounded text-xs"
+          className="bg-green-500 text-white px-2 py-1 rounded text-xs hidden lg:block"
         >
           WhatsApp
         </a>
         <a
           href="#"
-          className="bg-lime-500 text-white px-2 py-1 rounded text-xs"
+          className="bg-lime-500 text-white px-2 py-1 rounded text-xs hidden lg:block"
         >
           Mobile App
         </a>

@@ -4,7 +4,10 @@ import Heading from "../components/Heading";
 const OnlineEducation = () => {
   return (
     <section className="bg-white py-12 px-0 md:px-10 lg:max-w-4xl lg:mx-auto">
-      <div className="md:max-w-7xl px-3 w-full mx-auto grid lg:grid-cols-2 gap-10 items-center">
+      <div
+        data-aos="fade-up"
+        className="md:max-w-7xl px-3 w-full mx-auto grid lg:grid-cols-2 gap-10 items-center"
+      >
         <div>
           <Heading
             firstPart={"Benefits of"}
@@ -39,6 +42,7 @@ const OnlineEducation = () => {
       </div>
 
       <div
+        data-aos="fade-up"
         className="bg-secondary text-white py-6 px-4 grid grid-cols-2 md:grid-cols-4 text-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url("/assets/Clip.png")`,

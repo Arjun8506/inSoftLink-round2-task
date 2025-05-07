@@ -66,7 +66,7 @@ const CourseSection = () => {
         />
       </div>
 
-      <div className="mt-6 flex flex-col lg:flex-row bg-white overflow-hidden testimonialCard">
+      <div data-aos="fade-up" className="mt-6 flex flex-col lg:flex-row bg-white overflow-hidden testimonialCard">
         <div className="lg:w-1/4 flex flex-nowrap lg:flex-col bg-gray-100 border-r">
           {data?.map((item) => (
             <div

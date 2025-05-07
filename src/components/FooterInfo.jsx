@@ -54,7 +54,10 @@ const FooterInfo = () => {
   ];
   return (
     <div className="bg-secondary text-white px-4 py-10 pt-36 md:pt-20 text-sm">
-      <div className="max-w-6xl lg:max-w-4xl mx-auto flex flex-col gap-8 md:flex-row justify-between">
+      <div
+        data-aos="fade-up"
+        className="max-w-6xl lg:max-w-4xl mx-auto flex flex-col gap-8 md:flex-row justify-between"
+      >
         <div className="md:w-1/4">
           <FooterHeading text={"About US"} />
           <p className="text-gray-300 lg:text-sm">
@@ -95,7 +98,6 @@ const FooterInfo = () => {
 
       <hr className="my-6 border-gray-700 lg:max-w-4xl mx-auto" />
 
-      {/* Bottom row */}
       <div className="lg:max-w-4xl mx-auto w-full flex flex-col lg:flex-row lg:grid lg:grid-cols-3 justify-between gap-6 text-gray-300">
         <div className="flex items-center gap-2">
           <div className="p-[10px] bg-[#666666] flex items-center justify-center rounded-full">
@@ -103,7 +105,9 @@ const FooterInfo = () => {
           </div>
           <p className="flex flex-col items-start">
             <span className="text-primary lg:text-base">Call Us:</span>
-            <a href="tel:+919540343932" className="lg:text-sm">+91-9540343932</a>
+            <a href="tel:+919540343932" className="lg:text-sm">
+              +91-9540343932
+            </a>
           </p>
         </div>
 
@@ -113,7 +117,9 @@ const FooterInfo = () => {
           </div>
           <p className="flex flex-col items-start">
             <span className="text-primary lg:text-base">Mail Us:</span>
-            <a href="mailto:contact@schoolaura.com" className="lg:text-sm">contact@schoolaura.com</a>
+            <a href="mailto:contact@schoolaura.com" className="lg:text-sm">
+              contact@schoolaura.com
+            </a>
           </p>
         </div>
 

@@ -47,14 +47,14 @@ const TestimonialSlider = () => {
   ];
   return (
     <section className="py-12 bg-[#f1f1f1] my-20 mb-44">
-      <div className="w-full flex items-center justify-center">
+      <div data-aos="fade-up" className="w-full flex items-center justify-center">
         <Heading
           firstPart={"WHAT"}
           secondPart={"PARENT SAYS"}
           isFlexCol={false}
         />
       </div>
-      <div className="mt-10 px-3 lg:px-0 lg:max-w-4xl mx-auto">
+      <div data-aos="fade-up" className="mt-10 px-3 lg:px-0 lg:max-w-4xl mx-auto">
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}

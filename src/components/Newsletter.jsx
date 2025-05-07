@@ -11,7 +11,11 @@ const Newsletter = () => {
         backgroundImage: `url("/assets/Clip.png")`,
       }}
     >
-      <Heading firstPart={"SUBSCRIBE OUR"} secondPart={"NEWSLETTER"} isCenter={false} />
+      <Heading
+        firstPart={"SUBSCRIBE OUR"}
+        secondPart={"NEWSLETTER"}
+        isCenter={false}
+      />
       <div className="mt-4 lg:mt-0 flex justify-center items-center gap-2 flex-wrap lg:flex-nowrap lg:gap-0 lg:w-1/2">
         <InputField placeholder={"Email Address"} type={"email"} />
         <Button
