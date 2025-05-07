@@ -1,22 +1,29 @@
 import Aos from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import Navbar from "./container/Navbar";
 import Footer from "./container/Footer";
 import Home from "./page/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./page/Login";
 
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000
+      duration: 1000,
     });
   }, []);
 
   return (
     <div className="w-full font-openSans">
-      <Navbar />
-      <Home />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 };

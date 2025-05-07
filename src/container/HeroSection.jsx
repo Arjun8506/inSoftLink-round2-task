@@ -17,7 +17,7 @@ const HeroSection = () => {
         backgroundImage: `url("/assets/banner-bg.png")`,
       }}
     >
-      <div data-aos="fade-up" className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-20 grid lg:grid-cols-3 gap-10 items-start ">
+      <div data-aos="fade-up" className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-20 grid lg:grid-cols-3 gap-10 items-start relative !z-[2]">
         <div className="md:col-span-2 order-2 lg:order-1">
           <div className="mb-6">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">

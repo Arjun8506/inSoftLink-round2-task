@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { FaHamburger, FaSchool } from "react-icons/fa";
 import MobileBarNav from "../components/MobileBarNav";
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const navbarData = [
   {
@@ -100,13 +101,13 @@ const Navbar = () => {
       <nav className="bg-primary text-white h-auto">
         <div className="flex justify-between items-start flex-wrap">
           <div className="flex items-center relative">
-            <a href="/">
+            <Link to={"/"}>
               <img
                 src="/assets/logo_school.png"
                 alt="SchoolAura Logo"
                 className="h-8 w-auto z-[1] absolute top-3 lg:left-20 left-3"
               />
-            </a>
+            </Link>
             <img
               src="/assets/logo-cloud.png"
               alt="SchoolAura Logo background"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const tabs = [
@@ -14,7 +15,7 @@ const LoginForm = () => {
   ];
   const [selectedTab, setselectedTab] = useState(tabs[0]?.value);
   return (
-    <div className="bg-white p-6 drop-shadow-xl text-black w-full max-w-md mx-auto order-1 lg:order-1">
+    <div className="bg-white p-6 drop-shadow-xl text-black w-full max-w-sm mx-auto order-1 lg:order-1 !relative !z-[2]">
       <div className="flex flex-col items-center mb-4">
         <img
           src="/assets/user-img.png"
@@ -69,7 +70,7 @@ const LoginForm = () => {
       />
       <div className={`flex justify-between text-xs text-gray-600 mt-4 ${selectedTab === tabs[0]?.value ? "" : "!justify-end"}`}>
         <a href="#">Forgot Password</a>
-        {selectedTab === tabs[0]?.value && <a href="#">Create Account</a>}
+        {selectedTab === tabs[0]?.value && <Link to={"/login"} className="cursor-pointer">Create Account</Link>}
       </div>
     </div>
   );
