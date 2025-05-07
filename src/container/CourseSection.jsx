@@ -57,7 +57,7 @@ const CourseSection = () => {
   )?.courses;
 
   return (
-    <section className="py-10 lg:max-w-4xl lg:mx-auto">
+    <section className="py-10 lg:pt-60 lg:max-w-4xl lg:mx-auto">
       <div className="w-full px-3">
         <Heading
           firstPart={"Provide"}

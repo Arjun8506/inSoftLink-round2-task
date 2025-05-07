@@ -32,6 +32,18 @@ const TestimonialSlider = () => {
       text: `I have seen my son go from hating math to absolutely loving it. His marks have improved so much from last year. He looks forward to attending math sessions. Thank you, School Aura!`,
       img: "https://randomuser.me/api/portraits/women/4.jpg",
     },
+    {
+      name: "Ravi Kaushal",
+      location: "Indore, Madhya Pradesh",
+      text: `Excellent teacher with a fantastic teaching method; if I had had this teacher in school, I believe I would have achieved my goal of becoming a lecturer.`,
+      img: "https://randomuser.me/api/portraits/men/3.jpg",
+    },
+    {
+      name: "Rasmi Panday",
+      location: "Delhi",
+      text: `I have seen my son go from hating math to absolutely loving it. His marks have improved so much from last year. He looks forward to attending math sessions. Thank you, School Aura!`,
+      img: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
   ];
   return (
     <section className="py-12 bg-[#f1f1f1] my-20 mb-44">
@@ -42,7 +54,7 @@ const TestimonialSlider = () => {
           isFlexCol={false}
         />
       </div>
-      <div className="mt-10 px-4 max-w-7xl mx-auto">
+      <div className="mt-10 px-3 lg:px-0 lg:max-w-4xl mx-auto">
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -63,7 +75,7 @@ const TestimonialSlider = () => {
           }}
         >
           {testimonials.map((item, idx) => (
-            <SwiperSlide key={idx} className="mb-12">
+            <SwiperSlide key={idx} className="mb-12 lg:mb-14 lg:mt-1 lg:px-2">
               <div className="testimonialCard bg-white rounded-lg p-5 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-3">
                   <img
@@ -76,7 +88,7 @@ const TestimonialSlider = () => {
                     <p className="text-sm text-orange-500">{item.location}</p>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">{item.text}</p>
+                <p className="text-sm text-gray-600 lg:text-sm">{item.text}</p>
               </div>
             </SwiperSlide>
           ))}

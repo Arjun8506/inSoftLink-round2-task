@@ -17,10 +17,10 @@ const HeroSection = () => {
         backgroundImage: `url("/assets/banner-bg.png")`,
       }}
     >
-      <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-20 grid md:grid-cols-3 gap-10 items-start ">
+      <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-20 grid lg:grid-cols-3 gap-10 items-start ">
         <div className="md:col-span-2 order-2 lg:order-1">
           <div className="mb-6">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
               <span className="text-white">BE A </span>
               <span className="text-black">SMART STUDENT</span>
             </h1>
@@ -35,7 +35,7 @@ const HeroSection = () => {
         </div>
         <LoginForm />
       </div>
-      <div className="w-full h-10 absolute -bottom-0 lg:bottom-20 !z-[1]">
+      <div className="w-full h-10 absolute -bottom-0 md:bottom-10 lg:bottom-24 !z-[1]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270">
           <path
             fill="#ffffff"

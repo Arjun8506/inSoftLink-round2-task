@@ -68,7 +68,7 @@ const BenefitsSection = () => {
   return (
     <section className="bg-white py-16 px-3 lg:max-w-4xl lg:mx-auto md:py-20">
       <div className="w-full">
-        <div className="w-full lg:w-fit lg:mx-auto">
+        <div className="w-full md:w-fit md:mx-auto">
           <Heading
             firstPart={"BENEFITS OF SCHOOLAURA"}
             secondPart={"FOR STUDENT"}

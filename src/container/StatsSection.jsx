@@ -25,17 +25,17 @@ const StatsSection = () => {
     },
   ];
   return (
-    <section className="bg-white py-20 px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
-      <div className="w-[100%] h-60 bg-secondary relative">
-        <div className="w-[95%] h-60 absolute -top-10 left-5 bg-[#f1f1f1]"></div>
+    <section className="bg-white py-20 px-4  md:max-w-4xl md:mx-auto flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20">
+      <div className="w-[100%] lg:w-[30%] h-60 lg:h-52 bg-secondary relative">
+        <div className="w-[95%] lg:w-full h-60 lg:h-52 absolute -top-10 left-5 bg-[#f1f1f1]"></div>
         <img
           src="/assets/client.png"
           alt="Teacher"
-          className="w-[70%] absolute bottom-0 right-0 rounded-md"
+          className="w-[70%] lg:w-[60%] absolute bottom-0 right-0 lg:right-10 rounded-md"
         />
       </div>
 
-      <div className="lg:text-left flex flex-col items-start w-full gap-5">
+      <div className="lg:text-left lg:w-[60%] flex flex-col items-start w-full gap-5">
         <Heading
           firstPart={"WE"}
           secondPart={"ARE SPREADING"}
@@ -43,7 +43,7 @@ const StatsSection = () => {
           isLine={true}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-20">
           {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-4">
               <img src={stat.icon} alt={stat?.label} />

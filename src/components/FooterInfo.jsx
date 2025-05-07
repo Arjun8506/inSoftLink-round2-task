@@ -30,7 +30,7 @@ const footerLinks = [
 ];
 
 const FooterHeading = ({ text }) => (
-  <h3 className="text-lg text-primary mb-2">{text}</h3>
+  <h3 className="text-lg text-primary mb-2 lg:text-base">{text}</h3>
 );
 
 const FooterInfo = () => {
@@ -53,11 +53,11 @@ const FooterInfo = () => {
     },
   ];
   return (
-    <div className="bg-secondary text-white px-4 py-10 pt-36 text-sm">
-      <div className="max-w-6xl mx-auto flex flex-col gap-8 md:flex-row justify-between">
+    <div className="bg-secondary text-white px-4 py-10 pt-36 md:pt-20 text-sm">
+      <div className="max-w-6xl lg:max-w-4xl mx-auto flex flex-col gap-8 md:flex-row justify-between">
         <div className="md:w-1/4">
           <FooterHeading text={"About US"} />
-          <p className="text-gray-300">
+          <p className="text-gray-300 lg:text-sm">
             SchoolAura Smart Education Platform is a step towards making
             learning better and effective for the students and help to achieving
             their goals.
@@ -72,7 +72,7 @@ const FooterInfo = () => {
                 <li key={idx}>
                   <a
                     href={link.href}
-                    className="flex items-center gap-0.5 text-gray-400 hover:text-white"
+                    className="flex lg:text-sm items-center gap-0.5 text-gray-400 hover:text-white"
                   >
                     <FaAngleRight className="text-primary" />
                     {link.label}
@@ -85,7 +85,7 @@ const FooterInfo = () => {
 
         <div className="md:w-1/5">
           <FooterHeading text={"Follow Us"} />
-          <div className="grid grid-cols-2 w-[40%] gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 w-[40%] gap-4 mt-2">
             {socialData?.map((item, index) => (
               <img src={item?.src} alt={item?.alt} key={index} />
             ))}
@@ -93,17 +93,17 @@ const FooterInfo = () => {
         </div>
       </div>
 
-      <hr className="my-6 border-gray-700" />
+      <hr className="my-6 border-gray-700 lg:max-w-4xl mx-auto" />
 
       {/* Bottom row */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-gray-300">
+      <div className="lg:max-w-4xl mx-auto w-full flex flex-col lg:flex-row lg:grid lg:grid-cols-3 justify-between gap-6 text-gray-300">
         <div className="flex items-center gap-2">
           <div className="p-[10px] bg-[#666666] flex items-center justify-center rounded-full">
             <FaPhone size={28} className="rotate-90" />
           </div>
           <p className="flex flex-col items-start">
-            <span className="text-primary">Call Us:</span>
-            <a href="tel:+919540343932">+91-9540343932</a>
+            <span className="text-primary lg:text-base">Call Us:</span>
+            <a href="tel:+919540343932" className="lg:text-sm">+91-9540343932</a>
           </p>
         </div>
 
@@ -112,8 +112,8 @@ const FooterInfo = () => {
             <FaEnvelope size={28} />
           </div>
           <p className="flex flex-col items-start">
-            <span className="text-primary">Mail Us:</span>
-            <a href="mailto:contact@schoolaura.com">contact@schoolaura.com</a>
+            <span className="text-primary lg:text-base">Mail Us:</span>
+            <a href="mailto:contact@schoolaura.com" className="lg:text-sm">contact@schoolaura.com</a>
           </p>
         </div>
 
@@ -122,8 +122,8 @@ const FooterInfo = () => {
             <FaMapMarkerAlt size={28} />
           </div>
           <p className="flex flex-col items-start">
-            <span className="text-primary">Office Address:</span>
-            <span className="text-sm">
+            <span className="text-primary lg:text-base">Office Address:</span>
+            <span className="text-sm lg:text-sm">
               Pocket D, Okhla Phase II, Okhla Industrial Area, New Delhi, Delhi
               110020, India
             </span>

@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 
 const VisitCampus = () => {
   return (
-    <section className="bg-[#f1f1f1] py-10 px-3">
+    <section className="bg-[#f1f1f1] py-10 px-3 lg:py-2 lg:px-0 lg:max-w-4xl lg:mx-auto">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Video Block */}
         <div className="w-full h-72 bg-black relative">
@@ -31,7 +31,7 @@ const VisitCampus = () => {
           <h3 className="text-xl md:text-2xl font-bold text-tertiary mb-2">
             OR WATCH WITH VIDEO
           </h3>
-          <div className="flex items-center gap-2 text-[#f55900] hover:drop-shadow-lg transition-all ease-in-out duration-300 font-medium cursor-pointer">
+          <div className="flex items-center gap-2 text-[#f55900] transition-all ease-in-out duration-300 font-medium cursor-pointer rounded w-fit">
             <FaPlay className="text-lg" />
             <span className="text-[#0c0c24]">PLAY NOW</span>
           </div>
