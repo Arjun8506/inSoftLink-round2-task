@@ -31,7 +31,7 @@ const StatsSection = () => {
         <img
           src="/assets/client.png"
           alt="Teacher"
-          className="w-[70%] lg:w-[60%] absolute bottom-0 right-0 lg:right-10 rounded-md"
+          className="w-[50%] lg:w-[60%] absolute bottom-0 right-0 lg:right-10 rounded-md"
         />
       </div>
 
