@@ -17,7 +17,7 @@ const HeroSection = () => {
         backgroundImage: `url("/assets/banner-bg.png")`,
       }}
     >
-      <div data-aos="fade-up" className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-20 grid lg:grid-cols-3 gap-10 items-start relative !z-[2]">
+      <div data-aos="fade-up" className=" py-12 px-4 md:px-8 lg:px-24 2xl:px-40 grid lg:grid-cols-3 gap-10 items-start relative !z-[2]">
         <div className="md:col-span-2 order-2 lg:order-1">
           <div className="mb-6">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
@@ -27,15 +27,16 @@ const HeroSection = () => {
             <p className="text-lg">SchoolAura Is A Smart Education Platform</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative">
             {cardData.map((card, index) => (
               <InfoCard key={index} title={card.title} buttons={card.buttons} />
             ))}
+            <img src="/assets/header-girl-icon.png" alt="header-girl" className="h-44 lg:h-60 w-auto absolute bottom-0 -left-10 md:-left-20" />
           </div>
         </div>
         <LoginForm />
       </div>
-      <div className="w-full h-10 absolute -bottom-0 md:bottom-10 lg:bottom-24 !z-[1]">
+      <div className="w-full h-10 absolute -bottom-0 md:bottom-10 lg:bottom-24 2xl:h-40 2xl:bottom-20 !z-[1]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270">
           <path
             fill="#ffffff"
