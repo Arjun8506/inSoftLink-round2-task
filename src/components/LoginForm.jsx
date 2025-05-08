@@ -70,7 +70,7 @@ const LoginForm = () => {
       />
       <div className={`flex justify-between text-xs text-gray-600 mt-4 ${selectedTab === tabs[0]?.value ? "" : "!justify-end"}`}>
         <a href="#">Forgot Password</a>
-        {selectedTab === tabs[0]?.value && <Link to={"/login"} className="cursor-pointer">Create Account</Link>}
+        {selectedTab === tabs[0]?.value && <Link to={"/account/register"} className="cursor-pointer">Create Account</Link>}
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import Footer from "./container/Footer";
 import Home from "./page/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./page/Login";
+import Register from "./page/Register";
 
 const App = () => {
   useEffect(() => {
@@ -20,7 +21,8 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/account/login" element={<Login />} />
+          <Route path="/account/register" element={<Register />} />
         </Routes>
         <Footer />
       </Router>
